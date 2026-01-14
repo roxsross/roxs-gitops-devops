@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: portfolio-devops-k8s
+spec:
+  project: default
+  source:
+    repoURL: 'https://github.com/roxsross/roxs-gitops-devops'
+    path: argocd-k8s
+    targetRevision: HEAD
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: develop
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

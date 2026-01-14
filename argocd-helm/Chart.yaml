@@ -1,0 +1,4 @@
+apiVersion: v2
+name: portfolio-devops
+version: 0.1.0
+description: Un portafolio DevOps usando Helm

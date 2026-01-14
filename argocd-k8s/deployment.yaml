@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: portfolio-devops
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: portfolio-devops
+  template:
+    metadata:
+      labels:
+        app: portfolio-devops
+    spec:
+      containers:
+      - name: portfolio-devops
+        image: roxsross12/portfolio-devops:1.0.0
+        ports:
+        - containerPort: 80

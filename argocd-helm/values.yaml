@@ -1,0 +1,7 @@
+replicaCount: 1
+image:
+  repository: roxsross12/portfolio-devops
+  tag: "1.0.0"
+service:
+  type: NodePort
+  port: 80
