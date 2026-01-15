@@ -1,7 +1,7 @@
 replicaCount: 1
 image:
   repository: roxsross12/portfolio-devops
-  tag: develop-21486ed
+  tag: develop-28a40fd
 service:
   type: NodePort
   port: 80
